@@ -1,0 +1,129 @@
+.cp-payments {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 40px 24px;
+}
+
+.cp-payments-title {
+    font-family: var(--font-display);
+    color: var(--palace-navy);
+    margin-bottom: 20px;
+}
+
+.cp-payments-status {
+    background: #fffdf9;
+    border: 1px solid rgba(27, 42, 74, 0.12);
+    border-radius: 10px;
+    padding: 18px 22px;
+    margin-bottom: 24px;
+}
+
+.cp-payments-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 0;
+    font-family: var(--font-body);
+}
+
+.cp-payments-done {
+    color: var(--verified-green);
+    font-weight: 700;
+    margin-top: 10px;
+    font-family: var(--font-body);
+    font-size: 14px;
+}
+
+.cp-payments-badge {
+    font-family: var(--font-body);
+    font-size: 11px;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 999px;
+    text-transform: uppercase;
+}
+
+.cp-payments-badge--pending,
+.cp-payments-badge--physical_dd_received {
+    background: rgba(184, 134, 11, 0.15);
+    color: var(--pending-amber);
+}
+
+.cp-payments-badge--verified {
+    background: rgba(46, 125, 50, 0.15);
+    color: var(--verified-green);
+}
+
+.cp-payments-badge--rejected {
+    background: rgba(198, 40, 40, 0.15);
+    color: var(--denied-red);
+}
+
+.cp-payments-form {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    background: #fffdf9;
+    border: 1px solid rgba(184, 134, 11, 0.25);
+    border-radius: 12px;
+    padding: 28px 26px;
+}
+
+.cp-payments-form h2 {
+    font-family: var(--font-display);
+    color: var(--palace-navy);
+    font-size: 18px;
+    margin: 0 0 10px;
+}
+
+.cp-payments-form label {
+    font-family: var(--font-body);
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--palace-navy);
+    margin-top: 10px;
+}
+
+.cp-payments-form input {
+    font-family: var(--font-body);
+    font-size: 14px;
+    padding: 9px 11px;
+    border: 1px solid rgba(27, 42, 74, 0.25);
+    border-radius: 8px;
+    margin-top: 4px;
+}
+
+.cp-payments-form button {
+    margin-top: 20px;
+    background: var(--palace-navy);
+    color: var(--ivory);
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    font-family: var(--font-body);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.cp-payments-form button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.cp-payments-error {
+    background: rgba(198, 40, 40, 0.1);
+    color: var(--denied-red);
+    padding: 10px 12px;
+    border-radius: 8px;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.cp-payments-success {
+    background: rgba(46, 125, 50, 0.1);
+    color: var(--verified-green);
+    padding: 10px 12px;
+    border-radius: 8px;
+    font-size: 13px;
+    margin-bottom: 8px;
+}

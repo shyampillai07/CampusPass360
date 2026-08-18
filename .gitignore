@@ -1,0 +1,40 @@
+# Dependencies
+node_modules/
+server/node_modules/
+
+# Environment variables
+.env
+client/.env
+server/.env
+
+# Logs
+*.log
+
+# Uploads / user-generated files
+uploads/
+server/uploads/
+
+# Build output
+build/
+dist/
+
+# IDE / editor
+.vscode/
+
+# OS files
+.DS_Store
+
+# Coverage
+coverage/
+
+# Temporary files
+*.tmp
+
+# Test output
+test-output/
+
+# dist
+client/dist/
+
+#Scripts
+server/scripts/

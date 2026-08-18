@@ -1,0 +1,36 @@
+.cp-shell {
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
+  background: var(--ivory);
+}
+
+
+.cp-main {
+  position: relative;
+  flex: 1;
+
+  overflow: hidden;
+}
+
+
+.cp-main-inner {
+  position: relative;
+  z-index: 1;
+
+  width: 100%;
+  max-width: none;
+
+  margin: 0;
+  padding: 0;
+
+  min-height: 0;
+}
+
+
+.cp-watermark {
+  display: none;
+}

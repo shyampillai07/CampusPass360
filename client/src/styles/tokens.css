@@ -1,0 +1,19 @@
+:root {
+  --ivory: #F7F2E7;
+  --palace-navy: #1B2A4A;
+  --mysuru-gold: #B8860B;
+  --sandalwood: #8B5E3C;
+
+  --verified-green: #2E7D32;
+  --pending-amber: #B8860B;
+  --denied-red: #C62828;
+
+  --text-primary: #1B2A4A;
+  --text-muted: #6B6B63;
+
+  --font-display: 'Playfair Display', serif;
+  --font-body: 'Inter', sans-serif;
+
+  --radius-card: 12px;
+  --radius-input: 8px;
+}

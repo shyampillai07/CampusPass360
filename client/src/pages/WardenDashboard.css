@@ -1,0 +1,104 @@
+.cp-warden {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 24px;
+}
+
+.cp-warden-title {
+    font-family: var(--font-display);
+    color: var(--palace-navy);
+    margin: 0;
+}
+
+.cp-warden-count {
+    color: var(--text-muted);
+    margin: 4px 0 24px;
+}
+
+.cp-warden-empty {
+    color: var(--text-muted);
+}
+
+.cp-ledger-card {
+    background: #fffdf9;
+    border-left: 5px solid var(--pending-amber);
+    border-radius: 10px;
+    padding: 18px 22px;
+    margin-bottom: 16px;
+}
+
+.cp-ledger-head {
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--font-display);
+    color: var(--palace-navy);
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.cp-ledger-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-top: 1px solid rgba(27, 42, 74, 0.08);
+}
+
+.cp-ledger-label {
+    font-family: var(--font-body);
+    font-size: 14px;
+    color: var(--text-primary);
+    margin-right: 10px;
+}
+
+.cp-badge {
+    font-family: var(--font-body);
+    font-size: 11px;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 999px;
+    text-transform: uppercase;
+}
+
+.cp-badge--pending,
+.cp-badge--physical_dd_received {
+    background: rgba(184, 134, 11, 0.15);
+    color: var(--pending-amber);
+}
+
+.cp-badge--verified {
+    background: rgba(46, 125, 50, 0.15);
+    color: var(--verified-green);
+}
+
+.cp-badge--rejected {
+    background: rgba(198, 40, 40, 0.15);
+    color: var(--denied-red);
+}
+
+.cp-ledger-actions button {
+    font-family: var(--font-body);
+    font-size: 12px;
+    font-weight: 700;
+    padding: 6px 12px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    margin-left: 8px;
+    background: var(--verified-green);
+    color: white;
+}
+
+.cp-ledger-actions button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.cp-btn-reject {
+    background: var(--denied-red) !important;
+}
+
+@media (max-width: 500px) {
+  .cp-ledger-row { flex-direction: column; align-items: flex-start; gap: 8px; }
+  .cp-ledger-actions { margin-top: 4px; }
+}

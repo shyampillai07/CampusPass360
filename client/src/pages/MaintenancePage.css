@@ -1,0 +1,115 @@
+.cp-maint {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 40px 24px;
+}
+
+.cp-maint-title {
+    font-family: var(--font-display);
+    color: var(--palace-navy);
+    margin-bottom: 20px;
+}
+
+.cp-maint-form {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    background: #fffdf9;
+    border: 1px solid rgba(184, 134, 11, 0.25);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 24px;
+}
+
+.cp-maint-form label {
+    font-family: var(--font-body);
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--palace-navy);
+}
+
+.cp-maint-form textarea {
+    font-family: var(--font-body);
+    font-size: 14px;
+    padding: 9px 11px;
+    border: 1px solid rgba(27, 42, 74, 0.25);
+    border-radius: 8px;
+    margin-top: 4px;
+    resize: vertical;
+}
+
+.cp-maint-form button {
+    margin-top: 14px;
+    background: var(--palace-navy);
+    color: var(--ivory);
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    font-family: var(--font-body);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.cp-maint-error {
+    background: rgba(198, 40, 40, 0.1);
+    color: var(--denied-red);
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 13px;
+}
+
+.cp-maint-ticket {
+    background: #fffdf9;
+    border-left: 4px solid var(--pending-amber);
+    border-radius: 8px;
+    padding: 14px 18px;
+    margin-bottom: 10px;
+    font-family: var(--font-body);
+    font-size: 14px;
+}
+
+.cp-maint-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
+}
+
+.cp-maint-date {
+    color: var(--text-muted);
+    font-size: 12px;
+}
+
+.cp-maint-note {
+    color: var(--text-muted);
+    font-size: 13px;
+    font-style: italic;
+    margin-top: 6px;
+}
+
+.cp-maint-badge {
+    font-size: 11px;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 999px;
+    text-transform: uppercase;
+}
+
+.cp-maint-badge--open {
+    background: rgba(184, 134, 11, 0.15);
+    color: var(--pending-amber);
+}
+
+.cp-maint-badge--in_progress {
+    background: rgba(27, 42, 74, 0.1);
+    color: var(--palace-navy);
+}
+
+.cp-maint-badge--resolved {
+    background: rgba(46, 125, 50, 0.15);
+    color: var(--verified-green);
+}
+
+.cp-maint-badge--rejected {
+    background: rgba(198, 40, 40, 0.15);
+    color: var(--denied-red);
+}

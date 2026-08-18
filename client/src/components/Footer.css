@@ -1,0 +1,151 @@
+.cp-footer {
+  width: 100%;
+  background: #122542;
+  color: var(--ivory);
+}
+
+
+.cp-footer-hairline {
+  width: 100%;
+  height: 3px;
+
+  background: var(--mysuru-gold);
+}
+
+
+.cp-footer-inner {
+  width: min(1200px, 100%);
+  margin: 0 auto;
+  padding: 34px 24px 22px;
+
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 0.8fr) minmax(0, 1.1fr);
+  align-items: stretch;
+  gap: 32px 44px;
+}
+
+
+.cp-footer-section {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 100%;
+}
+
+.cp-footer-section:nth-child(2) {
+  justify-self: center;
+  width: 100%;
+  max-width: 220px;
+}
+
+.cp-footer-contact {
+  justify-self: end;
+  width: 100%;
+  max-width: 320px;
+}
+
+
+.cp-footer-section h3 {
+  margin: 0 0 20px;
+
+  font-family: var(--font-display);
+  font-size: 24px;
+  font-weight: 400;
+
+  color: var(--mysuru-gold);
+}
+
+
+.cp-footer-section p,
+.cp-footer-contact a {
+  max-width: 340px;
+
+  margin: 0 0 10px;
+
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.7;
+
+  color: rgba(247, 242, 231, 0.78);
+  text-decoration: none;
+}
+
+
+.cp-footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+
+.cp-footer-links a {
+  width: fit-content;
+
+  font-family: var(--font-body);
+  font-size: 15px;
+
+  color: rgba(247, 242, 231, 0.82);
+  text-decoration: none;
+
+  transition: color 0.2s ease;
+}
+
+
+.cp-footer-links a:hover,
+.cp-footer-contact a:hover {
+  color: var(--mysuru-gold);
+}
+
+.cp-footer-bottom {
+  border-top: 1px solid rgba(247, 242, 231, 0.13);
+
+  padding: 18px 20px 20px;
+
+  text-align: center;
+
+  font-family: var(--font-body);
+  font-size: 14px;
+
+  color: rgba(247, 242, 231, 0.58);
+}
+
+.cp-footer-brand-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.cp-footer-crest {
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+}
+
+.cp-footer-brand h3 {
+  margin: 0;
+  font-size: 17px;
+}
+
+.cp-footer-suborg {
+  font-family: var(--font-body);
+  font-size: 12px;
+  color: var(--mysuru-gold);
+}
+
+@media (max-width: 700px) {
+  .cp-footer-inner {
+    width: calc(100% - 40px);
+
+    grid-template-columns: 1fr;
+    gap: 35px;
+
+    padding: 44px 0;
+  }
+
+  .cp-footer-section p {
+    max-width: none;
+  }
+}

@@ -1,0 +1,105 @@
+.cp-admin {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 40px 24px;
+}
+
+.cp-admin-title {
+    font-family: var(--font-display);
+    color: var(--palace-navy);
+    margin-bottom: 20px;
+}
+
+.cp-admin-form {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    background: #fffdf9;
+    border: 1px solid rgba(184, 134, 11, 0.25);
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 30px;
+}
+
+.cp-admin-form h2 {
+    font-family: var(--font-display);
+    font-size: 17px;
+    color: var(--palace-navy);
+    margin: 0 0 10px;
+}
+
+.cp-admin-form label {
+    font-family: var(--font-body);
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--palace-navy);
+    margin-top: 10px;
+}
+
+.cp-admin-form input,
+.cp-admin-form select {
+    font-family: var(--font-body);
+    font-size: 14px;
+    padding: 9px 11px;
+    border: 1px solid rgba(27, 42, 74, 0.25);
+    border-radius: 8px;
+    margin-top: 4px;
+}
+
+.cp-admin-form button {
+    margin-top: 18px;
+    background: var(--palace-navy);
+    color: var(--ivory);
+    border: none;
+    border-radius: 8px;
+    padding: 11px;
+    font-family: var(--font-body);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.cp-admin-error {
+    background: rgba(198, 40, 40, 0.1);
+    color: var(--denied-red);
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 13px;
+}
+
+.cp-admin-success {
+    background: rgba(46, 125, 50, 0.1);
+    color: var(--verified-green);
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 13px;
+}
+
+.cp-admin-list-title {
+    font-family: var(--font-display);
+    font-size: 17px;
+    color: var(--palace-navy);
+    margin-bottom: 10px;
+}
+
+.cp-admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fffdf9;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.cp-admin-table th,
+.cp-admin-table td {
+    text-align: left;
+    padding: 9px 14px;
+    font-family: var(--font-body);
+    font-size: 13px;
+    border-bottom: 1px solid rgba(27, 42, 74, 0.1);
+}
+
+.cp-admin-table th {
+    color: var(--text-muted);
+    text-transform: uppercase;
+    font-size: 11px;
+}

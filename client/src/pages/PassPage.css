@@ -1,0 +1,18 @@
+.cp-pass-page {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 40px 24px;
+}
+
+.cp-pass-page-title {
+    font-family: var(--font-display);
+    color: var(--palace-navy);
+    margin-bottom: 6px;
+}
+
+.cp-pass-page-note {
+    color: var(--text-muted);
+    font-family: var(--font-body);
+    font-size: 13px;
+    margin-bottom: 24px;
+}
