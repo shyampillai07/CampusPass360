@@ -38,3 +38,6 @@ client/dist/
 
 #Scripts
 server/scripts/
+
+# Miscellaneous
+client/.gitignore/
