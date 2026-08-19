@@ -101,6 +101,12 @@
     transform: translateX(4px);
 }
 
+.cp-overview-table-wrap {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    border-radius: 10px;
+}
+
 @media (max-width: 600px) {
     .cp-overview-actions {
         grid-template-columns: 1fr;

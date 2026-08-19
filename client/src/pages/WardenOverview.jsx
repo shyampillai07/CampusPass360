@@ -54,16 +54,18 @@ export default function WardenOverview() {
           </Link>
         </div>
 
-        <table className="cp-overview-table">
-          <thead><tr><th>Block</th><th>Category</th><th>Occupied</th><th>Available</th></tr></thead>
-          <tbody>
-            {Object.entries(byBlock).map(([name, d]) => (
-              <tr key={name}>
-                <td>{name}</td><td>{d.category}</td><td>{d.occupied}</td><td>{d.total - d.occupied}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
+        <div className="cp-overview-table-wrap">
+          <table className="cp-overview-table">
+            <thead><tr><th>Block</th><th>Category</th><th>Occupied</th><th>Available</th></tr></thead>
+            <tbody>
+              {Object.entries(byBlock).map(([name, d]) => (
+                <tr key={name}>
+                  <td>{name}</td><td>{d.category}</td><td>{d.occupied}</td><td>{d.total - d.occupied}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
 
         <p className="cp-overview-note">{available} bed{available !== 1 ? 's' : ''} available across all blocks.</p>
       </div>
