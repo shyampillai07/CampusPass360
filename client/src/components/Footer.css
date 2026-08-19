@@ -138,6 +138,7 @@
 @media (max-width: 700px) {
   .cp-footer-inner {
     width: calc(100% - 40px);
+    gap: 40px;
 
     grid-template-columns: 1fr;
     gap: 35px;
@@ -148,4 +149,12 @@
   .cp-footer-section p {
     max-width: none;
   }
+
+  .cp-footer-section:nth-child(2),
+  .cp-footer-contact {
+    justify-self: stretch;
+    width: 100%;
+    max-width: none;
+  }
+
 }
