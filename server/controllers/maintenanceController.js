@@ -23,7 +23,10 @@ async function listMyTickets(req, res) {
 
 async function listAllTickets(req, res) {
   const { status } = req.query;
-  const filter = status ? { status } : {};
+  const ALLOWED_STATUSES = ['OPEN', 'IN_PROGRESS', 'RESOLVED', 'REJECTED'];
+  const filter = typeof status === 'string' && ALLOWED_STATUSES.includes(status)
+    ? { status }
+    : {};
   const tickets = await MaintenanceTicket.find(filter).sort({ createdAt: -1 }).lean();
   return res.status(200).json({ tickets });
 }

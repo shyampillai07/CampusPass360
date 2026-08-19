@@ -5,24 +5,24 @@ const { validateLedgerVerification } = require('../utils/validators');
 
 
 async function submitLedger(req, res) {
-  
+
   const errors = validateLedgerSubmission(req.body);
   if (errors.length > 0) {
     return res.status(400).json({ errors });
   }
 
- 
-  
+
+
   if (!req.file) {
     return res.status(400).json({ error: 'A receipt PDF is required' });
   }
 
-  
+
   if (!isRealPdf(req.file.buffer)) {
     return res.status(400).json({ error: 'Uploaded file is not a valid PDF' });
   }
 
-  
+
   const filename = await saveUploadedFile(req.file.buffer, '.pdf');
 
   const { academicYear, vtuDuReference, vtuRentAmount, ddNumber, ddBankName, messFeeAmount } = req.body;
@@ -30,7 +30,7 @@ async function submitLedger(req, res) {
   let ledger;
   try {
     ledger = await PaymentLedger.create({
-      studentId: req.user.id,     
+      studentId: req.user.id,
       usn: req.user.usn,
       academicYear,
       vtuDuReference,
@@ -42,7 +42,7 @@ async function submitLedger(req, res) {
     });
   } catch (err) {
     if (err.code === 11000) {
-      
+
       return res.status(409).json({
         error: 'A ledger for this year already exists, or this payment reference/DD number has already been used',
       });
@@ -56,7 +56,8 @@ async function submitLedger(req, res) {
 
 async function listLedgers(req, res) {
   const { status } = req.query;
-  const filter = status ? { $or: [{ vtuRentStatus: status }, { messDdStatus: status }] } : {};
+  const ALLOWED_STATUSES = ['PENDING', 'VERIFIED', 'REJECTED', 'PHYSICAL_DD_RECEIVED'];
+  const filter = typeof status === 'string' && ALLOWED_STATUSES.includes(status) ? { $or: [{ vtuRentStatus: status }, { messDdStatus: status }] } : {};
   const ledgers = await PaymentLedger.find(filter).sort({ createdAt: -1 }).lean();
   return res.status(200).json({ ledgers });
 }
