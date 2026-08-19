@@ -27,21 +27,7 @@ Registration · Payment Verification · Room Allocation · Digital Pass · QR Ac
 ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
 ![PWA](https://img.shields.io/badge/PWA-5A0FC8?style=for-the-badge&logo=pwa&logoColor=white)
 
-</p>
-
-<p align="center">
-
-<a href="https://campuspass360.vercel.app">
-<img src="https://img.shields.io/badge/LIVE%20APPLICATION-CampusPass360-1B2A4A?style=for-the-badge" alt="Live Application">
-</a>
-
-<a href="https://campuspass360.onrender.com/api/health">
-<img src="https://img.shields.io/badge/API-Health%20Check-47A248?style=for-the-badge" alt="API Health">
-</a>
-
-</p>
 </div>
-
 
 
 ## Overview
@@ -643,27 +629,6 @@ Framework: Vite
 Database: MongoDB Atlas
 ODM: Mongoose
 ```
-
-
-
-## Live Application
-
-<p align="center">
-
-<a href="https://campuspass360.vercel.app">
-<img src="https://img.shields.io/badge/OPEN%20CAMPUSPASS360-LIVE%20APPLICATION-1B2A4A?style=for-the-badge" alt="Open CampusPass360">
-</a>
-
-</p>
-
-**Application**
-
-https://campuspass360.vercel.app
-
-**API Health**
-
-https://campuspass360.onrender.com/api/health
-
 
 
 ## Known Limitations
