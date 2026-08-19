@@ -42,7 +42,7 @@ export default function LandingPage() {
           </div>
         </section>
         <div className="hero-services-divider" aria-hidden="true" />
-        <section className="services-section">
+        <section className="services-section" id="services">
           <div className="section-heading">
             <p className="landing-eyebrow">CAMPUSPASS360</p>
             <h2>Hostel Services</h2>
@@ -54,7 +54,7 @@ export default function LandingPage() {
             <article className="service-item"><span className="service-number">04</span><div><h3>Maintenance</h3><p>Quick issue reporting with transparent resolution tracking.</p></div></article>
           </div>
         </section>
-        <section className="landing-intro">
+        <section className="landing-intro" id="about">
           <p className="landing-eyebrow">VTU PG CENTRE • MYSURU</p>
           <h2>Digital management for hostel<br />services.</h2>
           <p>CampusPass360 brings essential hostel services together in one accessible platform for students and hostel administrators.</p>

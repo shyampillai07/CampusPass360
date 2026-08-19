@@ -26,9 +26,9 @@ export default function Footer() {
           <h3>Quick Links</h3>
 
           <div className="cp-footer-links">
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#contact">Support</a>
+            <a href="/#about">About</a>
+            <a href="/#services">Services</a>
+            <a href="mailto:pgmysore@vtu.ac.in">Support</a>
           </div>
         </div>
 
